@@ -5,12 +5,17 @@ import Button from "./Button";
 import "./HeroSection.css";
 
 function HeroSection() {
-const arr = ["/new.mp4", "/kong.mp4", "/video-1.mp4", "/video-2.mp4"];
-  const source = arr[Math.floor(Math.random() * arr.length)];
+
+  
   
   return (
     <div className="hero-container">
-      <video src={source} autoPlay loop muted />
+      <video
+        src="https://firebasestorage.googleapis.com/v0/b/poster-b85ee.appspot.com/o/new.mp4?alt=media&token=b6cf4bb2-3a69-4657-9b65-3750e1e7c7aa"
+        autoPlay
+        loop
+        muted
+      />
       <h1>Movie AWAITS</h1>
       <p>What are you waiting for?</p>
       <div className="hero-btns">
